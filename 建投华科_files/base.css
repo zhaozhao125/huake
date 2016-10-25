@@ -1,0 +1,181 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+body,ol,table,tr,td,dt,dd,dl,h1,h2,h3,h4,h5,h6,form,input,select,textarea{margin:0;padding:0; font-family: "微软雅黑"; font-size:12px; font-weight:normal;}
+
+ul,li{margin:0;padding:0; font-family:"微软雅黑";font-weight:normal;}
+
+html{ overflow-x:hidden;}
+
+body{font-size:12px;color:#474747; margin:0; padding:0; _overflow:hidden; overflow-x:hidden; overflow:visible; background:#fff;}
+
+.red{ color:red;}
+
+input,button,select,textarea{outline:none}
+
+p{ margin:0; padding:0;}
+
+a img{border:none;}
+
+li{list-style-type:none;}
+
+a{text-decoration:none;color:#000;}
+
+input{vertical-align:middle;font-family:"微软雅黑";}
+
+table{border-collapse:collapse;font-family:"微软雅黑";}
+
+a:hover{cursor:pointer;}
+
+a,area { blr:expression(this.onFocus=this.blur()) } /* for IE */
+
+:focus { -moz-outline-style: none; } /* for Firefox */
+
+a { outline:none; } /* for FF Chrome */
+
+.dis{display:none;}
+
+.clear{ clear:both;}
+
+html{ -webkit-text-size-adjust:none; /*解决chrome浏览器下字体不能小于12px*/}
+
+/* 兼容IE6的定位属性fixed，固定不动样式 */
+
+.fixed{
+
+	position:fixed; 
+
+	clip:rect(0 100% 100% 0);
+
+	_position:absolute;	
+
+	/* 底部 */
+
+	bottom:0px;
+
+	left:0px;
+
+	_top:expression(document.documentElement.scrollTop+document.documentElement.clientHeight-this.clientHeight);
+
+	/*_left:expression(document.documentElement.scrollLeft + document.documentElement.clientWidth - offsetWidth);*/
+
+	/* 左侧 */
+
+	/*left:0px;*/
+
+	/*_top:expression(document.documentElement.scrollTop+document.documentElement.clientHeight-this.clientHeight);*/
+
+	/*_left:expression(document.documentElement.scrollLeft + document.documentElement.clientWidth - offsetWidth);*/
+
+}
+
+/* 解决固定层在IE6下闪的问题 */
+
+*html{
+
+	background-image:url(about:blank);
+
+	background-attachment:fixed;
+
+}
+
+/*png图片ie6下透明滤镜实现写法*/
+
+.pngimg{filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='images/x.png');}
+
+em{ font-style:italic !important;} strike{ text-decoration:line-through !important;} strong{ font-weight:bold !important;} u{ text-decoration:underline !important;}
+
+
+
+/*common*/
+
+header{ position:absolute; left:50%; margin-left:-50%; z-index:9999; width:100%; padding:20px 0; border-bottom:1px solid rgba(255,255,255,0.4);}
+
+header .top{ width:1182px; position:relative; left:50%; margin-left:-591px; display:table;}
+
+header .top .logo{ float:left; width:216px; height:64px;}
+
+header .top .logo img{ width:216px; height:64px;}
+
+
+
+header .top nav{ float:right; width:610px; margin-top:20px;}
+
+header .top nav .subnav{ width:640px; display:table;}
+
+header .top nav .subnav li{ float:left; margin-left:9px; position:relative;}
+
+header .top nav .subnav li span{ display:inline-block; vertical-align:middle; margin-left:15px; width:1px; height:14px; background-color:rgba(255,255,255,0.6);}
+
+header .top nav .subnav li a{ display:inline-block; width:84px; height:30px; text-align:center; line-height:30px; font-size:13px; color:#fff; 
+
+	transition:background .1s linear 0s; -webkit-transition:background .1s linear 0s; -moz-transition:background .1s linear 0s; -o-transition:background .1s linear 0s;
+
+}
+
+header .top nav .subnav li a:hover{ background-color:#9F0215;}
+
+
+
+header .top nav .subnav li .bg{ background-color:#9F0215;}
+
+header .top nav .subnav li dl{ display:none; position:absolute; left:50%; margin-left:-50%; background-color:#9F0215; 
+
+/*    box-shadow: 0 1px 3px #fff;
+
+	-webkit-box-shadow: 0 1px 3px #fff;
+
+	-moz-box-shadow: 0 1px 3px #fff;*/
+
+}
+
+header .top nav .subnav li dl dd a:hover{ background-color:#88010E !important;}
+
+
+
+header .top nav .subnav .langugae{ float:right; margin-right:22px; }
+
+header .top nav .subnav .langugae div{ margin-top:5px;}
+
+header .top nav .subnav .langugae a{ padding:0 2px;}
+
+header .top nav .subnav .langugae .en{ width:18px !important; height:18px !important; font-size:12px !important; line-height:18px !important; color:#333 !important; background-color:#fff !important;
+
+		transition:all linear .2s; -webkit-transition:all linear .2s; -moz-transition:all linear .2s; -o-transition:all linear .2s;
+
+}
+
+header .top nav .subnav .langugae .CH{ width:18px !important; height:18px !important; margin-left:-4px; font-size:12px !important; line-height:18px !important; color:#fff !important; background-color:#9F0215 !important;}
+
+header .top nav .subnav .langugae .on{ width:29px !important; background-color:#fff !important; color:#333 !important;}
+
+header .top nav .subnav .langugae .en:hover{ width:18px !important; color:#fff !important; background-color:#9F0215 !important;
+
+        transition:all linear .2s; -webkit-transition:all linear .2s; -moz-transition:all linear .2s; -o-transition:all linear .2s;
+
+}
+
+header .top nav .subnav .langugae .ys{ width:29px !important; background-color:#fff !important; color:#333 !important; 
+
+ 	    transition:all linear .2s; -webkit-transition:all linear .2s; -moz-transition:all linear .2s; -o-transition:all linear .2s;
+
+}
+
+
+
+footer{ display:table; position:relative; width:100%; left:50%; margin-left:-50%; padding:20px 0 40px; border-top:1px solid #E5E5E5; background-color:#fff;}
+
+.foot{ display:table; width:1202px; position:absolute; left:50%; margin-left:-601px;}
+
+.foot article{ float:left; display:table; width:50%;}
+
+.foot article p{ font-size:12px; color:#B9B9B9;}
+
+.foot article h4{ float:right;}
+
+.foot article h4 a{ display:inline-block; font-size:12px; color:#AFAFAF; transition: color .3s ease 0s; -moz-transition: color .3s ease 0s; -webkit-transition: color .3s ease 0s;}
+
+.foot article h4 a:hover{ color:#D81F0E;}
+
+.foot article h4 span{ display:inline-block; margin:0px 8px; color:#AFAFAF;}
